@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veri İndirme Ekranı</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Veri İndirme Ekranı</h1>
+    <p>Size verilen kodu girin (001–007).</p>
+
+    <div class="row">
+      <input id="codeInput" type="text" inputmode="numeric" maxlength="3" placeholder="Örn: 003" />
+      <button id="downloadBtn">İndir</button>
+    </div>
+
+    <p id="msg" class="msg" role="status" aria-live="polite"></p>
+
+    <details class="help">
+      <summary>İndirme başlamazsa?</summary>
+      <ul>
+        <li>Tarayıcı “çoklu indirmeye izin ver” uyarısı çıkarırsa <b>İzin ver</b> seçin.</li>
+      </ul>
+    </details>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
